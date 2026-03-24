@@ -1,0 +1,9 @@
+[submodule "log-insight"]
+	path = log-insight
+	url = c:/Users/dr1m/Desktop/github/claude code/skills/log-insight
+[submodule "log-validate"]
+	path = log-validate
+	url = c:/Users/dr1m/Desktop/github/claude code/skills/log-validate
+[submodule "llm-log-analyzer"]
+	path = llm-log-analyzer
+	url = c:/Users/dr1m/Desktop/github/llm-log-analyzer
