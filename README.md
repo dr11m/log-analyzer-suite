@@ -1,32 +1,34 @@
 # Log Analyzer Suite
 
-A monorepo of three log analysis tools exploring complementary approaches to AI-powered log analysis: llm-log-analyzer is a standalone Python module using LLM APIs; log-insight is a Claude Code skill using inductive analysis via parallel agents; log-validate is a Claude Code skill using deductive code-aware validation with full file coverage via grep.
+[English version](README.en.md)
 
-## Projects
+Монорепозиторий трёх инструментов для анализа логов с использованием AI: llm-log-analyzer — standalone Python-модуль с LLM API; log-insight — Claude Code skill с индуктивным анализом через параллельных агентов; log-validate — Claude Code skill с дедуктивной code-aware валидацией через grep.
 
-| Project | Description |
-|---------|-------------|
-| [log-insight](log-insight/) | Claude Code skill — AI log analysis via chunking and agents |
-| [log-validate](log-validate/) | Claude Code skill — code-aware log validation via grep |
-| [llm-log-analyzer](llm-log-analyzer/) | Standalone LLM-powered log analyzer module |
+## Проекты
 
-## Quick Reference
+| Проект | Описание |
+|--------|----------|
+| [log-insight](log-insight/) | Claude Code skill — AI-анализ логов через чанки и агентов |
+| [log-validate](log-validate/) | Claude Code skill — code-aware валидация логов через grep |
+| [llm-log-analyzer](llm-log-analyzer/) | Standalone Python-модуль для анализа логов через LLM |
+
+## Краткое сравнение
 
 | | log-insight | log-validate | llm-log-analyzer |
-|---|---|---|---|
-| Approach | Chunks + agents | Code-aware grep | Standalone LLM |
-| Code knowledge | No | Yes (logger map) | Yes |
-| File coverage | 5-30% | 100% | Context-limited |
+|---|-------------|--------------|------------------|
+| Подход | Чанки + агенты | Code-aware grep | Standalone LLM |
+| Знание кода | Нет | Да (карта логов) | Да |
+| Покрытие файла | 5-30% | 100% | Ограничено контекстом |
 
-## Usage
+## Использование
 
-Each subrepository is independent. Clone with submodules:
+Каждый сабмодуль независим. Клонируйте с сабмодулями:
 
 ```bash
 git clone --recursive <repo-url>
 ```
 
-Or initialize submodules separately:
+Или инициализируйте сабмодули отдельно:
 
 ```bash
 git clone <repo-url>
