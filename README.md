@@ -1,6 +1,6 @@
 # Log Analyzer Suite
 
-Meta-repository combining open-source log analysis tools.
+A monorepo of three log analysis tools exploring complementary approaches to AI-powered log analysis: llm-log-analyzer is a standalone Python module using LLM APIs; log-insight is a Claude Code skill using inductive analysis via parallel agents; log-validate is a Claude Code skill using deductive code-aware validation with full file coverage via grep.
 
 ## Projects
 
