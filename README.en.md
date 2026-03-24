@@ -15,8 +15,8 @@ A monorepo of three log analysis tools exploring complementary approaches to AI-
 | | log-insight | log-validate | llm-log-analyzer |
 |---|---|---|---|
 | Approach | Chunks + agents | Code-aware grep | Standalone LLM |
-| Code knowledge | No | Yes (logger map) | Yes |
-| File coverage | 5-30% | 100% | Context-limited |
+| Code knowledge | Yes (at context generation) | Yes (logger map) | Yes |
+| File coverage | Up to 100% (depends on chunk count) | 100% | Context-limited |
 
 ## Usage
 
